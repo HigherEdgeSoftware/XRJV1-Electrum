@@ -19,7 +19,7 @@ set -e
 mkdir -p tmp
 cd tmp
 
-for repo in electrum electrum-locale electrum-icons; do
+for repo in xrjv1-electrum xrjv1-electrum-locale xrjv1-electrum-icons; do
     if [ -d $repo ]; then
 	cd $repo
 	git pull
@@ -31,7 +31,7 @@ for repo in electrum electrum-locale electrum-icons; do
     fi
 done
 
-pushd electrum-locale
+pushd xrjv1-electrum-locale
 for i in ./locale/*; do
     dir=$i/LC_MESSAGES
     mkdir -p $dir
@@ -39,7 +39,7 @@ for i in ./locale/*; do
 done
 popd
 
-pushd electrum
+pushd xrjv1-electrum
 if [ ! -z "$1" ]; then
     git checkout $1
 fi
@@ -50,10 +50,10 @@ find -exec touch -d '2000-11-11T11:11:11+00:00' {} +
 popd
 
 rm -rf $WINEPREFIX/drive_c/electrum
-cp -r electrum $WINEPREFIX/drive_c/electrum
-cp electrum/LICENCE .
-cp -r electrum-locale/locale $WINEPREFIX/drive_c/electrum/lib/
-cp electrum-icons/icons_rc.py $WINEPREFIX/drive_c/electrum/gui/qt/
+cp -r xrjv1-electrum $WINEPREFIX/drive_c/electrum
+cp xrjv1-electrum/LICENCE .
+cp -r xrjv1-electrum-locale/locale $WINEPREFIX/drive_c/electrum/lib/
+cp xrjv1-electrum-icons/icons_rc.py $WINEPREFIX/drive_c/electrum/gui/qt/
 
 # Install frozen dependencies
 $PYTHON -m pip install -r ../../deterministic-build/requirements.txt

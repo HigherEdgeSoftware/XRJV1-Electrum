@@ -66,7 +66,7 @@ setup(
         'electrum_plugins': 'plugins',
     },
     package_data={
-        'electrum': [
+        'electrum-xrjv1': [
             'servers.json',
             'servers_testnet.json',
             'currencies.json',
@@ -77,7 +77,7 @@ setup(
             'locale/*/LC_MESSAGES/electrum.mo',
         ]
     },
-    scripts=['electrum'],
+    scripts=['electrum-xrjv1'],
     data_files=data_files,
     description="Lightweight XRJV1 Wallet",
     author="Thomas Voegtlin",
