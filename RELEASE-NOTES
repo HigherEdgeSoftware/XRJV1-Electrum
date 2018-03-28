@@ -1,5 +1,19 @@
 
-# Release 3.1 - (March 5, 2018)
+# Release 3.1.1 - (unreleased)
+
+  * fix #4031: Trezor T support
+  * partial fix #4060: proxy and hardware wallet can't be used together
+  * fix #4039: can't set address labels
+  * fix crash related to coinbase transactions
+  * MacOS: use internal graphics card
+  * fix openalias related crashes
+  * speed-up capital gains calculations
+  * hw wallet encryption: re-prompt for passphrase if incorrect
+  * other minor fixes.
+
+
+
+# Release 3.1.0 - (March 5, 2018)
 
  * Memory-pool based fee estimation. Dynamic fees can target a desired
    depth in the memory pool. This feature is optional, and ETA-based
@@ -749,7 +763,7 @@ issue #3374. Users should upgrade to 3.0.5.
 
 # Release 1.9.6
 * During wallet creation, do not write seed to disk until it is encrypted.
-* Confirmation dialog if the transaction fee is higher than 1mBTC.
+* Confirmation dialog if the transaction fee is higher than 1mXRJ.
 * bugfixes
 
 # Release 1.9.5
@@ -811,7 +825,7 @@ bugfixes: connection problems, transactions staying unverified
 
 # Release 1.7.3:
 
-* Classic GUI can display amounts in mBTC
+* Classic GUI can display amounts in mXRJ
 * Account selector in the classic GUI
 * Changed the way the portable flag uses without supplying a -w argument
 * Classic GUI asks users to enter their seed on wallet creation
@@ -821,7 +835,7 @@ bugfixes: connection problems, transactions staying unverified
 
 * Transactions that are in the same block are displayed in chronological order in the history.
 * The client computes transaction priority and rejects zero-fee transactions that need a fee.
-* The default fee was lowered to 200 uBTC per kb.
+* The default fee was lowered to 200 uXRJ per kb.
 * Due to an internal format change, your history may be pruned when
   you open your wallet for the first time after upgrading to 1.7.2. If
   this is the case, please visit a full server to restore your full
