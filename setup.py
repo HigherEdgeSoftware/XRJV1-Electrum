@@ -39,11 +39,11 @@ if platform.system() in ['Linux', 'FreeBSD', 'DragonFly']:
     ]
 
 setup(
-    name="Electrum",
+    name="Electrum XRJV1",
     version=version.ELECTRUM_VERSION,
     install_requires=requirements,
     packages=[
-        'electrum',
+        'electrum-xrjv1',
         'electrum_gui',
         'electrum_gui.qt',
         'electrum_plugins',
@@ -51,17 +51,17 @@ setup(
         'electrum_plugins.cosigner_pool',
         'electrum_plugins.email_requests',
         'electrum_plugins.greenaddress_instant',
-        'electrum_plugins.hw_wallet',
-        'electrum_plugins.keepkey',
+        #'electrum_plugins.hw_wallet',
+        #'electrum_plugins.keepkey',
         'electrum_plugins.labels',
-        'electrum_plugins.ledger',
-        'electrum_plugins.trezor',
-        'electrum_plugins.digitalbitbox',
-        'electrum_plugins.trustedcoin',
+        #'electrum_plugins.ledger',
+        #'electrum_plugins.trezor',
+        #'electrum_plugins.digitalbitbox',
+        #'electrum_plugins.trustedcoin',
         'electrum_plugins.virtualkeyboard',
     ],
     package_dir={
-        'electrum': 'lib',
+        'electrum-xrjv1': 'lib',
         'electrum_gui': 'gui',
         'electrum_plugins': 'plugins',
     },
@@ -79,12 +79,12 @@ setup(
     },
     scripts=['electrum'],
     data_files=data_files,
-    description="Lightweight Bitcoin Wallet",
+    description="Lightweight XRJV1 Wallet",
     author="Thomas Voegtlin",
     author_email="thomasv@electrum.org",
     license="MIT Licence",
     url="https://electrum.org",
-    long_description="""Lightweight Bitcoin Wallet"""
+    long_description="""Lightweight XRJV1 Wallet"""
 )
 
 # Optional modules (not required to run Electrum)

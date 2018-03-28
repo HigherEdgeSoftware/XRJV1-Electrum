@@ -420,10 +420,10 @@ class SimpleConfig(PrintError):
             return self.has_fee_etas()
 
     def is_dynfee(self):
-        return bool(self.get('dynamic_fees', True))
+        return bool(self.get('dynamic_fees', False))
 
     def use_mempool_fees(self):
-        return bool(self.get('mempool_fees', False))
+        return bool(self.get('mempool_fees', True))
 
     def fee_per_kb(self):
         """Returns sat/kvB fee to pay for a txn.
