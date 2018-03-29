@@ -1,9 +1,9 @@
 # If you want electrum to appear in a linux app launcher ("start menu"), install this by doing:
-# sudo desktop-file-install electrum.desktop
+# sudo desktop-file-install electrum-xrjv1.desktop
 
 [Desktop Entry]
 Comment=Lightweight XRJV1 Client
-Exec=electrum %u
+Exec=electrum-xrjv1 %u
 GenericName[en_US]=XRJV1 Wallet
 GenericName=XRJV1 Wallet
 Icon=electrum

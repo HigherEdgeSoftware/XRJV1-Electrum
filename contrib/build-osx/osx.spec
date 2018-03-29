@@ -6,8 +6,8 @@ import sys
 import os
 
 PACKAGE='Electrum XRJV1'
-PYPKG='electrum'
-MAIN_SCRIPT='electrum'
+PYPKG='electrum-xrjv1'
+MAIN_SCRIPT='electrum-xrjv1'
 ICONS_FILE='electrum.icns'
 
 for i, x in enumerate(sys.argv):
