@@ -43,7 +43,7 @@ setup(
     version=version.ELECTRUM_VERSION,
     install_requires=requirements,
     packages=[
-        'electrum-xrjv1',
+        'electrum',
         'electrum_gui',
         'electrum_gui.qt',
         'electrum_plugins',
@@ -61,12 +61,12 @@ setup(
         'electrum_plugins.virtualkeyboard',
     ],
     package_dir={
-        'electrum-xrjv1': 'lib',
+        'electrum': 'lib',
         'electrum_gui': 'gui',
         'electrum_plugins': 'plugins',
     },
     package_data={
-        'electrum-xrjv1': [
+        'electrum': [
             'servers.json',
             'servers_testnet.json',
             'currencies.json',

@@ -86,7 +86,7 @@ exe_standalone = EXE(
     a.scripts,
     a.binaries,
     a.datas, 
-    name=os.path.join('build\\pyi.win32\\electrum-xrjv1', cmdline_name + ".exe"),
+    name=os.path.join('build\\pyi.win32\\xrjv1-electrum', cmdline_name + ".exe"),
     debug=False,
     strip=None,
     upx=False,
@@ -99,7 +99,7 @@ exe_portable = EXE(
     a.scripts,
     a.binaries,
     a.datas + [ ('is_portable', 'README.md', 'DATA' ) ],
-    name=os.path.join('build\\pyi.win32\\electrum-xrjv1', cmdline_name + "-portable.exe"),
+    name=os.path.join('build\\pyi.win32\\xrjv1-electrum', cmdline_name + "-portable.exe"),
     debug=False,
     strip=None,
     upx=False,
@@ -113,7 +113,7 @@ exe_dependent = EXE(
     pyz,
     a.scripts,
     exclude_binaries=True,
-    name=os.path.join('build\\pyi.win32\\electrum-xrjv1', cmdline_name),
+    name=os.path.join('build\\pyi.win32\\xrjv1-electrum', cmdline_name),
     debug=False,
     strip=None,
     upx=False,
@@ -130,4 +130,4 @@ coll = COLLECT(
     debug=False,
     icon=home+'icons/electrum.ico',
     console=False,
-    name=os.path.join('dist', 'electrum-xrjv1'))
+    name=os.path.join('dist', 'xrjv1-electrum'))
