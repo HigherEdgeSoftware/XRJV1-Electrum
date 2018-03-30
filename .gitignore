@@ -6,6 +6,8 @@ dist/
 *.egg/
 /electrum.py
 contrib/pyinstaller/
+contrib/build-wine/tmp
+contrib/build-deb/tmp
 Electrum.egg-info/
 gui/qt/icons_rc.py
 locale/
