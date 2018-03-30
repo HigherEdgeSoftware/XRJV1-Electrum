@@ -20,7 +20,7 @@ VERSION=`git describe --tags`
 # Paramterize
 PYTHON_VERSION=3.6.4
 BUILDDIR=/tmp/electrum-build
-PACKAGE=Electrum XRJV1
+PACKAGE="Electrum XRJV1"
 GIT_REPO=https://github.com/higheredgesoftware/xrjv1-electrum
 
 
