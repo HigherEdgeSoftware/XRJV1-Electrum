@@ -492,14 +492,14 @@ def time_difference(distance_in_time, include_seconds):
         return "over %d years" % (round(distance_in_minutes / 525600))
 
 mainnet_block_explorers = {
-    'XRJV1 Explorer': ('https://xrjv1explorer.radjav.com/',
+    'XRJV1 Explorer': ('http://xrjv1explorer.radjav.com/',
                         {'tx': 'tx/', 'addr': 'address/'}),
     'system default': ('blockchain:/',
                         {'tx': 'tx/', 'addr': 'address/'}),
 }
 
 testnet_block_explorers = {
-    'XRJV1 Explorer': ('https://xrjv1explorer.radjav.com/',
+    'XRJV1 Explorer': ('http://xrjv1explorer.radjav.com/',
                         {'tx': 'tx/', 'addr': 'address/'}),
     'system default': ('blockchain://000000000933ea01ad0ee984209779baaec3ced90fa3f408719526f8d77f4943/',
                        {'tx': 'tx/', 'addr': 'address/'}),
