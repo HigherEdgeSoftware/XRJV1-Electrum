@@ -23,6 +23,7 @@
 import time
 import queue
 import os
+import sys
 import stat
 import errno
 import random
@@ -139,7 +140,7 @@ def deserialize_proxy(s):
 
 
 def deserialize_server(server_str):
-	print "STR: " + server_str
+	print 'STRTEST: '
     host, port, protocol = str(server_str).rsplit(':', 2)
     assert protocol in 'st'
     int(port)    # Throw if cannot be converted to int
